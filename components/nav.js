@@ -36,7 +36,7 @@ export default function Nav() {
           </ul>
         </div>
         <div className="md:hidden">
-          <ul className="pt-4 pb-4 text-center text-2xl bg-gray-100 rounded-lg" style={{display: showMe?"block":"none"}}>
+          <ul className="pt-4 pb-4 text-center text-2xl border-4 border-black rounded-lg" style={{display: showMe?"block":"none"}}>
               {localPages.map(({href, label}) => (
                 <li key={`${href}${label}`} className="m-2">
                   <Link href={href}>
