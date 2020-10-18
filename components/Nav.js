@@ -17,7 +17,7 @@ export default function Nav() {
 
   return (
     <div className="font-roboto"> 
-      <header className="flex text-2xl md:text-4xl justify-center text-center mt-8 mb-8">
+      <header className="flex text-2xl md:text-4xl justify-center text-center mt-5 mb-5">
         <h1>Kameralny Chór Politechniki Wrocławskiej</h1>
       </header>
       <div className="p-4 cursor-pointer md:hidden" onClick={toggle}>

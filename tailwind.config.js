@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'accent-1': '#333',
+        'pwr': '#ab1200'
       },
       fontFamily: {
         roboto: ['Roboto Mono']
@@ -14,5 +15,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }

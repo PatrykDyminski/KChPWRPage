@@ -1,4 +1,5 @@
-import Nav from '../components/nav'
+import Nav from '../components/Nav'
+import IdCard from '../components/IdCard'
 
 import fs from 'fs'
 import path from 'path'
@@ -15,18 +16,16 @@ export default function Sklad({ peopleInVoices }) {
         Dyrygentką Kameralnego chóru Politechniki Wrocławskiej jest Anna Sipak asystentem dyrygenta jest Dominik Kozłowski
         </p>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2">
+        <ul className="">
           {peopleInVoices.map((voice) => (
-            <li className="text-center border-4 border-black rounded-lg px-4 py-2 m-2">
-              <h2 className="text-2xl text-accent-1">{voice.voiceName}</h2>
+            <li className=" rounded-lg px-4 py-2 m-2">
+              <h2 className="text-3xl text-center text-accent-1 font-medium border-t-4 border-b-4 border-black mt-10 py-2">{voice.voiceName}</h2>
               
-              <ul>
+              <div className="grid grid-cols-2 md:grid-cols-4">
                 {voice.people.map((person) => (
-                  <li>
-                    <p className="my-2">{person}</p>
-                  </li>
+                  <IdCard name={person} imgSource="/avatar.png" />
                 ))}
-              </ul>
+              </div>
 
             </li>
           ))}
