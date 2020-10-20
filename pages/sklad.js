@@ -1,17 +1,16 @@
 import Nav from '../components/Nav'
 import IdCard from '../components/IdCard'
+import MyPage from '../components/MyPage'
 
 import fs from 'fs'
 import path from 'path'
 
 export default function Sklad({ peopleInVoices }) {
   return (
-    <div>
+    <MyPage>
       <Nav />
       <div className="py-10">
-        <h1 className="text-5xl text-center text-accent-1">
-          Skład
-        </h1>
+
         <p className="text-xl text-accent-1 text-center mb-3">
         Dyrygentką Kameralnego chóru Politechniki Wrocławskiej jest Anna Sipak asystentem dyrygenta jest Dominik Kozłowski
         </p>
@@ -32,7 +31,7 @@ export default function Sklad({ peopleInVoices }) {
         </ul>
 
       </div>
-    </div>
+    </MyPage>
   )
 }
 

@@ -1,14 +1,65 @@
 import Nav from '../components/Nav'
+import MyPage from '../components/MyPage'
+import MyProse from '../components/MyProse'
 
-export default function Repertuar() {
+import fs from 'fs'
+import path from 'path'
+
+
+export default function Repertuar({ categories }) {
   return (
-    <div>
+    <MyPage>
       <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Repertuar
-        </h1>
-      </div>
-    </div>
+      <div className="flex flex-row place-content-center">
+        <img src="/nuty.jpg" className="rounded-sm border-1 border-black my-5"></img>
+      </div> 
+      <MyProse>
+        <h3>Nasz Repertuar</h3>
+        <p>W Kamerlnym Chórze PWr dbamy o jak najwyższą jakość prezentowanego mateiału, pomaga w tym idealnie wyselekcjonowny i zróżnicowany repertuar.</p>
+        <p>Znajdują się w nim utwory zarówno klasyczne jak i współczesne. Accapella oraz z akompaniamentem.
+          Spiewamy pieśni patriotyczne, sakralne, okresowe oraz rozrywkowe. Na zamówienie przygotujemy koncert z dowolnym repertuarem.
+        </p>        
+      </MyProse>
+
+      <ul className="">
+        {categories.map((category) => (
+          <li className=" rounded-lg px-4 py-2 m-2">
+            <h2 className="text-3xl text-center text-accent-1 font-medium border-t-4 border-b-4 border-black mt-5 mb-5 py-2">{category.categoryName}</h2>
+              
+            <div className="text-lg leading-relaxed">
+              {category.tracks.map((track) => (
+                <div>{track}</div>
+              ))}
+            </div>
+
+          </li>
+        ))}
+      </ul>
+    </MyPage>
   )
+}
+
+export async function getStaticProps() {
+  const musicDir = path.join(process.cwd(), 'data', 'repertoire')
+  const filenames = fs.readdirSync(musicDir)
+
+  const categories = filenames.map((filename) => {
+    const filePath = path.join(musicDir, filename)
+    const fileContents = fs.readFileSync(filePath, 'utf8')
+
+    const tracks =  fileContents.split(/\n/)
+    const categoryName = tracks[0]
+    tracks.shift()
+
+    return {
+      categoryName: categoryName,
+      tracks: tracks
+    }
+  })
+
+  return {
+    props: {
+      categories: categories.sort((a,b) => b.tracks.length - a.tracks.length)
+    }
+  }
 }
