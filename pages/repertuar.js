@@ -19,22 +19,20 @@ export default function Repertuar({ categories }) {
         <p>Znajdują się w nim utwory zarówno klasyczne jak i współczesne. Accapella oraz z akompaniamentem.
           Spiewamy pieśni patriotyczne, sakralne, okresowe oraz rozrywkowe. Na zamówienie przygotujemy koncert z dowolnym repertuarem.
         </p>        
-      </MyProse>
 
-      <ul className="">
         {categories.map((category) => (
-          <li className=" rounded-lg px-4 py-2 m-2">
+          <div className="">
             <h2 className="text-3xl text-center text-accent-1 font-medium border-t-4 border-b-4 border-black mt-5 mb-5 py-2">{category.categoryName}</h2>
               
-            <div className="text-lg leading-relaxed">
+            <ol className="">
               {category.tracks.map((track) => (
-                <div>{track}</div>
+                <li className="xl:prose-lg">{track}</li>
               ))}
-            </div>
+            </ol>
 
-          </li>
+          </div>
         ))}
-      </ul>
+      </MyProse>
     </MyPage>
   )
 }
