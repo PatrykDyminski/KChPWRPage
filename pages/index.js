@@ -1,11 +1,11 @@
-import Nav from '../components/Nav'
-import MyPage from '../components/MyPage'
-import MyProse from '../components/MyProse'
+import MyPage from '@components/MyPage'
+import MyProse from '@components/MyProse'
+
+const title = "Dom"
 
 export default function IndexPage() {
   return (
-    <MyPage>
-      <Nav />
+    <MyPage pageTitle={title}>
       <img src="/zdj1.jpg" className="rounded-sm border-1 border-black my-5"></img>
       <MyProse>
         <h3>Jesteśmy chórem działającym na Politechnice Wrocławskiej</h3>

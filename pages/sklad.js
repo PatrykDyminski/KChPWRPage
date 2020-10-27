@@ -1,14 +1,14 @@
-import Nav from '../components/Nav'
-import IdCard from '../components/IdCard'
-import MyPage from '../components/MyPage'
+import IdCard from '@components/IdCard'
+import MyPage from '@components/MyPage'
 
 import fs from 'fs'
 import path from 'path'
 
+const title = "Skład"
+
 export default function Sklad({ peopleInVoices }) {
   return (
-    <MyPage>
-      <Nav />
+    <MyPage pageTitle={title}>
       <div className="py-10">
 
         <p className="text-xl text-accent-1 text-center mb-3">

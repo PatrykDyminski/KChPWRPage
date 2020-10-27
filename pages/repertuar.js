@@ -1,15 +1,14 @@
-import Nav from '../components/Nav'
-import MyPage from '../components/MyPage'
-import MyProse from '../components/MyProse'
+import MyPage from '@components/MyPage'
+import MyProse from '@components/MyProse'
 
 import fs from 'fs'
 import path from 'path'
 
+const title = "Repertuar"
 
 export default function Repertuar({ categories }) {
   return (
-    <MyPage>
-      <Nav />
+    <MyPage pageTitle={title}>
       <div className="flex flex-row place-content-center">
         <img src="/nuty.jpg" className="rounded-sm border-1 border-black my-5"></img>
       </div> 

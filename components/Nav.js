@@ -7,6 +7,7 @@ const localPages = [
   {href: '/sklad', label: 'Skład'},
   {href: '/repertuar', label: 'Repertuar'},
   {href: '/historia', label: 'Historia'},
+  {href: '/blog', label: 'Blog'},
 ]
 
 export default function Nav() {

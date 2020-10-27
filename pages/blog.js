@@ -1,8 +1,8 @@
 import MyPage from '@components/MyPage'
 
-const title = "O nas"
+const title = "Blog"
 
-export default function ONas() {
+export default function Blog() {
   return (
     <MyPage pageTitle={title}>
       <div className="py-20">
