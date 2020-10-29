@@ -1,6 +1,8 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
+
+
 const title = "Dom"
 
 export default function IndexPage() {
