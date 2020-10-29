@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import fs from 'fs'
 import path from 'path'
+import HeroIdCard from '@components/HeroIdCard'
 
 const title = "Skład"
 
@@ -13,27 +14,19 @@ export default function Sklad({ peopleInVoices }) {
     <MyPage pageTitle={title}>
       <div className="py-10">
 
-        <p className="text-xl text-accent-1 text-center mb-3">
+        <p className="text-xl text-accent-1 text-center mt-8 mb-16">
         Dyrygentką Kameralnego chóru Politechniki Wrocławskiej jest Anna Sipak asystentem dyrygenta jest Dominik Kozłowski
         </p>
 
-        <div className="pb-4 grid grid-cols-2">
-          <Image src="/avatar.png" width={500} height={500} className="rounded-full transform scale-50"></Image>
-            <div className="self-start">
-              <div>Anna Sipak</div>
-              <div className="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </div>
-            </div>
-        </div>
+        <HeroIdCard name="Anna Sipak"
+                    imgSource="/avatar.png"
+                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    />
 
-        <div className="pb-4 grid grid-cols-2">
-          <Image src="/avatar.png" className="rounded-full transform scale-50"></Image>
-            <div className="self-start">
-              <div>Dominik Kozłowski</div>
-              <div className="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </div>
-            </div>
-        </div>
+        <HeroIdCard name="Dominik Kozłowski"
+                    imgSource="/avatar.png"
+                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    />
 
         <ul className="">
           {peopleInVoices.map((voice) => (
