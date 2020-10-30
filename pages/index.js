@@ -1,14 +1,16 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
-
+import Image from 'next/image'
 
 const title = "Dom"
 
 export default function IndexPage() {
   return (
     <MyPage pageTitle={title}>
-      <img src="/zdj1.jpg" className="rounded-sm border-1 border-black my-5"></img>
+      <div className="flex flex-col text-center items-center my-8">
+        <Image src="/zdj1.jpg" width={1152} height={583} alt="nasz zespół"/>
+      </div>
       <MyProse>
         <h3>Jesteśmy chórem działającym na Politechnice Wrocławskiej</h3>
         <p>Naszą pasją jest śpiew. Wśród nas są studenci, pracownicy oraz osoby całkowicie niezwiązane z uczelnią.</p>

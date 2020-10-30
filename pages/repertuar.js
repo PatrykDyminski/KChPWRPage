@@ -1,6 +1,8 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
+import Image from 'next/image'
+
 import fs from 'fs'
 import path from 'path'
 
@@ -9,9 +11,9 @@ const title = "Repertuar"
 export default function Repertuar({ categories }) {
   return (
     <MyPage pageTitle={title}>
-      <div className="flex flex-row place-content-center">
-        <img src="/nuty.jpg" className="rounded-sm border-1 border-black my-5"></img>
-      </div> 
+      <div className="flex flex-col text-center items-center my-8">
+        <Image src="/nuty.jpg" width={594} height={335} alt="nuty"/>
+      </div>
       <MyProse>
         <h3>Nasz Repertuar</h3>
         <p>W Kamerlnym Chórze PWr dbamy o jak najwyższą jakość prezentowanego mateiału, pomaga w tym idealnie wyselekcjonowny i zróżnicowany repertuar.</p>
