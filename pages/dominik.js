@@ -6,7 +6,8 @@ const title = "Asystent"
 export default function Dominik() {
   return (
     <MyPage pageTitle={title}>
-      <MyProse className="py-20">
+      <div className="mt-8">
+      <MyProse>
         <h1>Dominik Kozłowski</h1>
         <p>Dominik Kozłowski – ukończył Państwową Szkołę Muzyczną I stopnia im. Wojciecha Kilara
           w Dzierżoniowie w klasie fortepianu, następnie kontynuował naukę w Salezjańskiej
@@ -34,6 +35,7 @@ export default function Dominik() {
           Rektora Akademii Muzycznej we Wrocławiu.
         </p>
       </MyProse>
+      </div>
     </MyPage>
   )
 }

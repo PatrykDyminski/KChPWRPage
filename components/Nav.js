@@ -3,10 +3,10 @@ import { useState } from "react";
 
 const localPages = [
   {href: '/', label: 'Dom'},
-  {href: '/onas', label: 'O Nas'},
   {href: '/sklad', label: 'Skład'},
   {href: '/repertuar', label: 'Repertuar'},
   {href: '/historia', label: 'Historia'},
+  {href: '/rekrutacja', label: 'Rekrutacja'},
   {href: '/blog', label: 'Blog'},
 ]
 

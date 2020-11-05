@@ -20,13 +20,13 @@ export default function Sklad({ peopleInVoices }) {
 
         <HeroIdCard name="Anna Sipak"
                     imgSource="/avatar.png"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                    />
+                    link="/dyrygent"
+                    text="Anna Sipak – chórmistrz, dyrygent symfoniczny, pedagog. Absolwentka Uniwersytetu Warmińsko-Mazurskiego w Olsztynie (Edukacja Artystyczna w Zakresie Sztuki Muzycznej) oraz Akademii Muzycznej im. Karola Lipińskiego we Wrocławiu (Edukacja Muzyczna, Prowadzenie Zespołów Wokalnych i Wokalno-Instrumentalnych, Dyrygentura Symfoniczno-Operowa). Współzałożycielka i kierownik artystyczny Kameralnego Chóru Politechniki Wrocławskiej. Założycielka chóru Tre sta cantando III Liceum Ogólnokształcącego we Wrocławiu. Współpracuje m.in. z Narodowym Forum Muzyki i Wrocławskim Centrum Rozwoju Społecznego."/>
 
         <HeroIdCard name="Dominik Kozłowski"
                     imgSource="/avatar.png"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                    />
+                    link="/dominik"
+                    text="Dominik Kozłowski – dyrygent, wokalista, pianista, organista, kompozytor. Studiuje dyrygenturę symfoniczno-operową w klasie dr hab. Marzeny Diakun oraz wokalistykę w  klasie prof. Bogdana Makala. Zwycięzca i laureat Ogólnopolskich Konkursów Organowych w  Olsztynie. Członek Polskiego Narodowego Chóru Młodzieżowego. Występował podczas licznych wydarzeń kulturalnych w całej Polsce, m.in. w ramach 58. Międzynarodowego Festiwalu Moniuszkowskiego w Kudowie-Zdroju oraz X i XI Międzynarodowego Festiwalu Muzyka u J. I. Schnabla w Nowogrodźcu. W 2019 roku został uhonorowany stypendium Rektora Akademii Muzycznej we Wrocławiu."/>
 
         <ul className="">
           {peopleInVoices.map((voice) => (
@@ -34,9 +34,9 @@ export default function Sklad({ peopleInVoices }) {
               <h2 className="text-3xl text-center text-accent-1 font-medium border-t-4 border-b-4 border-black mt-10 py-2">{voice.voiceName}</h2>
               
               <div className="grid grid-cols-2 md:grid-cols-4">
-                {voice.people.map((person) => (
-                  <IdCard name={person} imgSource="/avatar.png" />
-                ))}
+                {voice.people.map((person) => 
+                  (<IdCard name={person.name} imgSource={person.picture} />)
+                  )}
               </div>
 
             </li>
@@ -58,9 +58,23 @@ export async function getStaticProps() {
     const voiceName = filename.split('\.')[0]
     const people =  fileContents.split(/\n/);
 
+    const people2 = people.map((p) => {
+      const p2 = p.split(',')
+      var img = p2[1]
+      //console.log(img)
+      if(p2[1] == null || p2[1] == ""){
+        img = "/avatar.png"
+      }
+      console.log(img)
+      return {
+        name: p2[0],
+        picture: img
+      }}
+    )
+
     return {
       voiceName,
-      people: people,
+      people: people2,
     }
   })
 

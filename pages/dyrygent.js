@@ -6,7 +6,8 @@ const title = "Dyrygent"
 export default function Dyrygent() {
   return (
     <MyPage pageTitle={title}>
-      <MyProse className="py-20">
+      <div className="mt-8">
+      <MyProse>
         <h1>Anna Sipak</h1>
         <p>Anna Sipak (ur.1989) – dyrygent, chórmistrz, pedagog. W 2012 roku ukończyła z wynikiem
             bardzo dobrym studia licencjackie na kierunku Edukacja Artystyczna W Zakresie Sztuki Muzycznej
@@ -33,18 +34,19 @@ export default function Dyrygent() {
             działała w roli chórzysty i asystenta dyrygenta.
             Współpracowała z wieloma zespołami w roli dyrygenta gościnnego.
             Od grudnia 2014 roku w ramach programu Akademia Chóralna Narodowego Forum Muzyki we Wrocławiu, prowadzi
-            chór dziecięcy Dolnośląskie Nutki oraz chór Tre sta cantando III Liceum Ogólnokształcącego im. Adama Mickiewicza we Wrocławiu.
+            chór dziecięcy "Dolnośląskie Nutki" oraz chór "Tre sta Cantando" przy III Liceum Ogólnokształcącego im. Adama Mickiewicza we Wrocławiu.
             Od października 2015 roku jest kierownikiem artystycznym Kameralnego Chóru Politechniki Wrocławskiej.
-            Aktywnie zajmuje się animacją kulturalną wśród osób starszych, prowadząc dwa zespoły senioralne – chór Słoneczniki oraz chór Ballada.
+            Aktywnie zajmuje się animacją kulturalną wśród osób starszych, prowadząc dwa zespoły senioralne – chór "Słoneczniki" oraz chór "Ballada".
         </p>
         <p>Poza działalnością chórmistrzowską zajmuje się wykonawstwem muzyki symfonicznej. Współpracowała m.in.
             z orkiestrą NFM Filharmonii Wrocławskiej i Filharmonii Dolnośląskiej w Jeleniej Górze. Swoje umiejętności
             doskonaliła podczas mistrzowskich kursów dyrygenckich, prowadzonych przez wybitne osobowości świata dyrygenckiego:
             Gabriela Chmurę, sir Colina Mettersa, Pawła Przytockiego, Jacka Delektę, Stanisława Krawczyńskiego,
-            Kerrego Strattona i Marka Pijarowskiego.W dorobku dyrygentki znajduje się dokonanie dwóch prawykonań
-            dzieł autorstwa Agnieszki Rucieckiej Nature 12-9-7-8-20-8-15-21-19-5 na orkiestrę smyczkową i kieliszki oraz ziMnICA na smyczki, instrumenty dęte i wibrafon.
+            Kerrego Strattona i Marka Pijarowskiego. W dorobku dyrygentki znajduje się dokonanie dwóch prawykonań
+            dzieł autorstwa Agnieszki Rucieckiej - Nature 12-9-7-8-20-8-15-21-19-5 na orkiestrę smyczkową i kieliszki oraz ziMnICA na smyczki, instrumenty dęte i wibrafon.
         </p>
       </MyProse>
+      </div>
     </MyPage>
   )
 }
