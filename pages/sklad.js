@@ -61,7 +61,6 @@ export async function getStaticProps() {
     const people2 = people.map((p) => {
       const p2 = p.split(',')
       var img = p2[1]
-      //console.log(img)
       if(p2[1] == null || p2[1] == ""){
         img = "/avatar.png"
       }
