@@ -1,11 +1,14 @@
 ---
-title: 'Pierwszy wpis na blogu'
+title: 'Pierwszy wpis na blogu ma być 1'
 author: 'Patryk Dymiński'
-date: '2020-10-28'
-image: /nuty.jpg
+date: 2020-11-11 -0800
+image: "/img/nuty.jpg"
 ---
 
-I'm baby tattooed affogato incididunt ut brooklyn fixie normcore woke unicorn. Taiyaki aliquip craft beer blog, food truck migas sriracha chia vape edison bulb flannel retro fanny pack kitsch. Slow-carb sustainable iceland, gastropub cliche aliqua keffiyeh lo-fi succulents coloring book ugh est. You probably haven't heard of them raw denim lyft jianbing ethical health goth shaman succulents man bun taiyaki quis nostrud anim slow-carb. Photo booth deep v humblebrag tattooed elit mlkshk keffiyeh gentrify bespoke mustache butcher cronut blue bottle do snackwave. Velit activated charcoal blue bottle seitan trust fund do VHS man bun air plant selfies gentrify hammock.
+**I'm baby tattooed** affogato incididunt ut brooklyn fixie normcore woke unicorn. Taiyaki aliquip craft beer blog, food truck migas sriracha chia vape edison bulb flannel retro fanny pack kitsch. Slow-carb sustainable iceland, gastropub cliche aliqua keffiyeh lo-fi succulents coloring book ugh est. You probably haven't heard of them raw denim lyft jianbing ethical health goth shaman succulents man bun taiyaki quis 
+> sadasd
+
+*nostrud anim* slow-carb. Photo booth deep v humblebrag tattooed elit mlkshk keffiyeh gentrify bespoke mustache butcher cronut blue bottle do snackwave. Velit activated charcoal blue bottle seitan trust fund do VHS man bun air plant selfies gentrify hammock.
 
 ## But it's not all easy
 
@@ -17,6 +20,6 @@ Humblebrag sartorial man braid ad vice, wolf ramps in cronut proident cold-press
 
 Typewriter yuccie sed 90's. Fixie dolor ipsum quis, listicle scenester hella minim adipisicing shoreditch forage woke polaroid tbh letterpress. Ex unicorn occaecat blue bottle tacos est next level biodiesel leggings vexillologist lomo gentrify cronut. Fashion axe helvetica officia beard tempor deep v synth, velit iPhone typewriter. Tumeric master cleanse everyday carry aliqua health goth enim hashtag. Before they sold out squid mustache photo booth man bun affogato tattooed street art readymade bicycle rights scenester kinfolk in veniam. Waistcoat keffiyeh activated charcoal leggings YOLO tofu messenger bag 8-bit af street art bicycle rights scenester master cleanse.
 
-![nuty](/nuty.jpg)
+![nuty](/img/nuty.jpg)
 
 Drinking vinegar mollit artisan, four dollar toast meh in asymmetrical deserunt cold-pressed proident fam jianbing kitsch normcore tacos. Deserunt voluptate in est, lo-fi forage yuccie pug chartreuse. Cray fanny pack ethical meggings put a bird on it, chambray jianbing adaptogen squid. In irure sunt yr aesthetic post-ironic, 3 wolf moon lyft. Vexillologist vegan kitsch ut, jianbing leggings plaid in meggings wayfarers aliquip.
