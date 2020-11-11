@@ -18,12 +18,12 @@ export default function Nav() {
 
   return (
     <div className="font-roboto"> 
-      <header className="flex text-2xl md:text-4xl justify-center text-center mt-5 mb-5">
+      <header className="flex text-lg sm:text-2xl md:text-4xl justify-center text-center my-3 md:my-5">
         <Link href='/'>
           <a>Kameralny Chór Politechniki Wrocławskiej</a>
         </Link>
       </header>
-      <div className="p-3 cursor-pointer md:hidden" onClick={toggle}>
+      <div className="p-3 flex justify-evenly items-center shadow-xl cursor-pointer md:hidden" onClick={toggle}>
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </div>
       <nav>
