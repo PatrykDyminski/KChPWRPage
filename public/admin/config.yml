@@ -2,12 +2,13 @@ backend:
   name: github
   repo: PatrykDyminski/KChPWRPage
 
+
 # This line should *not* be indented
 publish_mode: editorial_workflow
 
 # This line should *not* be indented
-media_folder: public/img
-public_folder: img
+media_folder: /public/img
+public_folder: /img
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -18,6 +19,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string", default: "Patryk"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "string", default: "DD-MM-YYYY"}
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
