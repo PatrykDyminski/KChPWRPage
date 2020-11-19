@@ -11,7 +11,7 @@ export default function PostOverview({
   slug,
 }) {
   return (
-    <div className="mb-8 md:mb-16">
+    <div className="mb-8 md:mb-16 max-w-sm">
       <div className="mb-5">
         <Link as={`/post/${slug}`} href="/post/[slug]">
             <a aria-label={title}>
