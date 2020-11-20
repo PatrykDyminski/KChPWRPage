@@ -12,7 +12,7 @@ const title = "Skład"
 export default function Sklad({ peopleInVoices }) {
   return (
     <MyPage pageTitle={title}>
-      <div className="py-10">
+      <div className="py-4 md:py-8">
 
         <p className="text-xl text-accent-1 text-center mt-8 mb-16">
         Dyrygentką Kameralnego chóru Politechniki Wrocławskiej jest Anna Sipak asystentem dyrygenta jest Dominik Kozłowski
@@ -31,7 +31,7 @@ export default function Sklad({ peopleInVoices }) {
         <ul className="">
           {peopleInVoices.map((voice) => (
             <li className="px-4 py-2 m-2">
-              <h2 className="text-3xl text-center text-accent-1 font-medium border-t-4 border-b-4 border-black mt-10 py-2">{voice.voiceName}</h2>
+              <h2 className="text-3xl text-center text-accent-1 font-medium border-t-4 border-b-4 border-black mt-4 md:mt-10 py-2">{voice.voiceName}</h2>
               
               <div className="grid grid-cols-2 md:grid-cols-4">
                 {voice.people.map((person) => 
