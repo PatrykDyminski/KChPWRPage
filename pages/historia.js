@@ -1,12 +1,16 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
+import Image from 'next/image'
+
 const title = "Historia"
 
 export default function Historia() {
   return (
     <MyPage pageTitle={title}>
-      <div className="mt-8">
+      <div className="flex flex-col text-center items-center my-8">
+        <Image src="/zdj2.jpg" width={768} height={512} alt="koncert barburkowy 2018"/>
+      </div>
       <MyProse>
         <h2>Historia Chóru</h2>
         <p>
@@ -17,9 +21,8 @@ export default function Historia() {
           Wśród naszych najciekawszych, przedsięwzięć (a było ich przez te 5 lat prawie 100!!!) znajdziecie wykonania muzyki wokalno-instrumentalnej, a'cappella, wykonania muzyki w spektaklu teatralnym na żywo (w ramach 40. Przeglądu Piosenki Aktorskiej), prawykonania utworów, nagrywanie utworów, fulmów video, performance muzyczne na żywo, kilka ciekawych artystycznych współprac, wywiady w radiu, artykuły w prasie...ach, długo można wymieniać.
           Jeśli chcecie dokładnie poznać nasze dokonania, w tym te ostatnie covidowo-youtubowe, zapraszamy do śledzenia naszego konta na facebooku. A najlepiej przyjdźcie do nas na próbę, wszystko Wam opowiemy. Jest też szansa, że nie będziecie chcieli już opuścić naszych szeregów! Kiedyś pewna dziennikarka radiowa przyszła przeprowadzić z nami wywiad i już została!
         </p>
-        <h3>Czekamy na WasKameralny Chór Politechniki Wrocławskiej</h3>
+        <h3>Czekamy na was!</h3>
       </MyProse>
-      </div>
     </MyPage>
   )
 }

@@ -1,11 +1,8 @@
 import IdCard from '@components/IdCard'
 import MyPage from '@components/MyPage'
 
-import Image from 'next/image'
-
-import fs from 'fs'
-import path from 'path'
 import HeroIdCard from '@components/HeroIdCard'
+import { getPeopleInVoices } from 'lib/api'
 
 const title = "Skład"
 
@@ -49,37 +46,12 @@ export default function Sklad({ peopleInVoices }) {
 }
 
 export async function getStaticProps() {
-  const peopleDir = path.join(process.cwd(), 'data', 'people')
-  const filenames = fs.readdirSync(peopleDir)
 
-  const peopleInVoices = filenames.map((filename) => {
-    const filePath = path.join(peopleDir, filename)
-    const fileContents = fs.readFileSync(filePath, 'utf8')
-    const voiceName = filename.split('\.')[0]
-    const people =  fileContents.split(/\n/);
-
-    const people2 = people.map((p) => {
-      const p2 = p.split(',')
-      var img = p2[1]
-      if(p2[1] == null || p2[1] == ""){
-        img = "/avatar.png"
-      }
-      console.log(img)
-      return {
-        name: p2[0],
-        picture: img
-      }}
-    )
-
-    return {
-      voiceName,
-      people: people2,
-    }
-  })
+  const ppl = getPeopleInVoices()
 
   return {
     props: {
-      peopleInVoices: peopleInVoices.sort((a,b) => b.people.length - a.people.length),
+      peopleInVoices: ppl
     },
   }
 }

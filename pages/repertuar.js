@@ -1,10 +1,9 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
-import Image from 'next/image'
+import { getRepertoire } from 'lib/api'
 
-import fs from 'fs'
-import path from 'path'
+import Image from 'next/image'
 
 const title = "Repertuar"
 
@@ -39,26 +38,10 @@ export default function Repertuar({ categories }) {
 }
 
 export async function getStaticProps() {
-  const musicDir = path.join(process.cwd(), 'data', 'repertoire')
-  const filenames = fs.readdirSync(musicDir)
-
-  const categories = filenames.map((filename) => {
-    const filePath = path.join(musicDir, filename)
-    const fileContents = fs.readFileSync(filePath, 'utf8')
-
-    const tracks =  fileContents.split(/\n/)
-    const categoryName = tracks[0]
-    tracks.shift()
-
-    return {
-      categoryName: categoryName,
-      tracks: tracks
-    }
-  })
-
+  const repertoire = getRepertoire()
   return {
     props: {
-      categories: categories.sort((a,b) => b.tracks.length - a.tracks.length)
+      categories: repertoire
     }
   }
 }
