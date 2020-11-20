@@ -11,6 +11,9 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: DD-MM-YYYY
+  default: now
 - type: file
   name: image
   label: image
