@@ -1,7 +1,7 @@
 ---
 title: 'Pierwszy wpis na blogu ma być 1'
 author: 'Patryk Dymiński'
-date: 2020-11-11 -0800
+date: 11-09-2020
 image: "/img/nuty.jpg"
 ---
 

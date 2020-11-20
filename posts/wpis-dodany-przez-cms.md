@@ -1,7 +1,7 @@
 ---
 title: Wpis dodany przez cms
 author: Patryk Dymiński
-date: 2020-11-11 -0800
+date: 11-11-2020
 image: /img/20190215_213414.jpg
 ---
 **afasf**
