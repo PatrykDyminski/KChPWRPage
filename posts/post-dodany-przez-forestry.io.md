@@ -1,5 +1,5 @@
 ---
-date: 2020-11-20T15:24:01Z
+date: 18-11-2020
 title: 'Post dodany przez forestry.io '
 author: Patryk Dymiński
 image: "/img/nature-mountains.jpg"
