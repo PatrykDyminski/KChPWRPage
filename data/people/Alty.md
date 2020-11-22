@@ -6,7 +6,7 @@ Monika Zoubek,/alty/MonikaZ.jpg
 Paulina Dutkowiak,/alty/PaulinaD.jpg
 Aleksandra Kramarz,/alty/OlaK.jpeg
 Agata Krząstek,/alty/AgataK.jpg
-Laura Kaczmarek,/alty/LuraK.jpg
+Laura Kaczmarek,/alty/LauraK.jpg
 Paulina Waleszczak,/alty/PaulinaW.jpg
 Grażyna Kawalec,/alty/GrazkaK.jpg
 Kinga Wasilewska,/alty/KingaW.png

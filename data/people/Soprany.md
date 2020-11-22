@@ -1,6 +1,6 @@
 Agnieszka Rożek,/soprany/AgnieszkaR.jpg
 Arina Kozlova,/soprany/ArinaK.jpg
-Małgorzata Lower,/soprany/GosliaL.jpg
+Małgorzata Lower,/soprany/GosiaL.jpg
 Joanna Petryszak,/soprany/JoannaP.jpeg
 Justyna Kępińska,/soprany/JustynaK.jpg
 Justyna Mandryka,/soprany/JustynaM.jpg

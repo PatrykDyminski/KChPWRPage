@@ -21,7 +21,7 @@ export default function Sklad({ peopleInVoices }) {
                     text="Anna Sipak – chórmistrz, dyrygent symfoniczny, pedagog. Absolwentka Uniwersytetu Warmińsko-Mazurskiego w Olsztynie (Edukacja Artystyczna w Zakresie Sztuki Muzycznej) oraz Akademii Muzycznej im. Karola Lipińskiego we Wrocławiu (Edukacja Muzyczna, Prowadzenie Zespołów Wokalnych i Wokalno-Instrumentalnych, Dyrygentura Symfoniczno-Operowa). Współzałożycielka i kierownik artystyczny Kameralnego Chóru Politechniki Wrocławskiej. Założycielka chóru Tre sta cantando III Liceum Ogólnokształcącego we Wrocławiu. Współpracuje m.in. z Narodowym Forum Muzyki i Wrocławskim Centrum Rozwoju Społecznego."/>
 
         <HeroIdCard name="Dominik Kozłowski"
-                    imgSource="/avatar.png"
+                    imgSource="/dominik.jpg"
                     link="/dominik"
                     text="Dominik Kozłowski – dyrygent, wokalista, pianista, organista, kompozytor. Studiuje dyrygenturę symfoniczno-operową w klasie dr hab. Marzeny Diakun oraz wokalistykę w  klasie prof. Bogdana Makala. Zwycięzca i laureat Ogólnopolskich Konkursów Organowych w  Olsztynie. Członek Polskiego Narodowego Chóru Młodzieżowego. Występował podczas licznych wydarzeń kulturalnych w całej Polsce, m.in. w ramach 58. Międzynarodowego Festiwalu Moniuszkowskiego w Kudowie-Zdroju oraz X i XI Międzynarodowego Festiwalu Muzyka u J. I. Schnabla w Nowogrodźcu. W 2019 roku został uhonorowany stypendium Rektora Akademii Muzycznej we Wrocławiu."/>
 
