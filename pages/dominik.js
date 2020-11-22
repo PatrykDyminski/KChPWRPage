@@ -1,12 +1,16 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
+import Image from 'next/image'
+
 const title = "Asystent"
 
 export default function Dominik() {
   return (
     <MyPage pageTitle={title}>
-      <div className="mt-8">
+      <div className="flex flex-col text-center items-center my-8">
+        <Image src="/dominik.jpg" width={1008} height={672} alt="Dominik Kosłowski"/>
+      </div>
       <MyProse>
         <h1>Dominik Kozłowski</h1>
         <p>Dominik Kozłowski – ukończył Państwową Szkołę Muzyczną I stopnia im. Wojciecha Kilara
@@ -35,7 +39,6 @@ export default function Dominik() {
           Rektora Akademii Muzycznej we Wrocławiu.
         </p>
       </MyProse>
-      </div>
     </MyPage>
   )
 }
