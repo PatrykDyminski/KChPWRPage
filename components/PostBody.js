@@ -7,7 +7,7 @@ import MyProse from './MyProse'
 export default function PostBody({ content }) {
   return (
     <MyProse>
-      <ReactMarkdown source={content} 
+      <ReactMarkdown source={content}
         className={markdownStyles['markdown']}
       />
     </MyProse>
