@@ -16,7 +16,7 @@ export default function Sklad({ peopleInVoices }) {
         </p>
 
         <HeroIdCard name="Anna Sipak"
-                    imgSource="/avatar.png"
+                    imgSource="/ania2optK.jpg"
                     link="/dyrygent"
                     text="Anna Sipak – chórmistrz, dyrygent symfoniczny, pedagog. Absolwentka Uniwersytetu Warmińsko-Mazurskiego w Olsztynie (Edukacja Artystyczna w Zakresie Sztuki Muzycznej) oraz Akademii Muzycznej im. Karola Lipińskiego we Wrocławiu (Edukacja Muzyczna, Prowadzenie Zespołów Wokalnych i Wokalno-Instrumentalnych, Dyrygentura Symfoniczno-Operowa). Współzałożycielka i kierownik artystyczny Kameralnego Chóru Politechniki Wrocławskiej. Założycielka chóru Tre sta cantando III Liceum Ogólnokształcącego we Wrocławiu. Współpracuje m.in. z Narodowym Forum Muzyki i Wrocławskim Centrum Rozwoju Społecznego."/>
 

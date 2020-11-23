@@ -9,7 +9,7 @@ export default function Dominik() {
   return (
     <MyPage pageTitle={title}>
       <div className="flex flex-col text-center items-center my-8">
-        <Image src="/dominik.jpg" width={1008} height={672} alt="Dominik Kosłowski"/>
+        <Image src="/dominik.jpg" width={1008} height={672} alt="Dominik Kozłowski"/>
       </div>
       <MyProse>
         <h1>Dominik Kozłowski</h1>

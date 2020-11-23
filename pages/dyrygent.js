@@ -1,12 +1,16 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
+import Image from 'next/image'
+
 const title = "Dyrygent"
 
 export default function Dyrygent() {
   return (
     <MyPage pageTitle={title}>
-      <div className="mt-8">
+      <div className="flex flex-col text-center items-center my-8">
+        <Image src="/aniaopt.jpg" width={1074} height={746} alt="Anna Sipak"/>
+      </div>
       <MyProse>
         <h1>Anna Sipak</h1>
         <p>Anna Sipak (ur.1989) – dyrygent, chórmistrz, pedagog. W 2012 roku ukończyła z wynikiem
@@ -46,7 +50,6 @@ export default function Dyrygent() {
             dzieł autorstwa Agnieszki Rucieckiej - Nature 12-9-7-8-20-8-15-21-19-5 na orkiestrę smyczkową i kieliszki oraz ziMnICA na smyczki, instrumenty dęte i wibrafon.
         </p>
       </MyProse>
-      </div>
     </MyPage>
   )
 }
