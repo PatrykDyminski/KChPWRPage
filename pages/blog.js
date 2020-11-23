@@ -14,7 +14,7 @@ export default function Blog({ allPosts }) {
   return (
     <MyPage pageTitle={title}>
       <div className="my-8">
-        <h2 className="mb-12 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+        <h2 className="mb-12 text-3xl md:text-6xl font-bold tracking-tighter leading-tight">
           Najnowsze wpisy
         </h2>
         <PostsGrid posts={[heroPost, heroPost2]} />

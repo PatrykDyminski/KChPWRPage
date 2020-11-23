@@ -16,7 +16,7 @@ export default function IndexPage({ posts }) {
         <Image src="/zdj1.jpg" width={1152} height={583} alt="nasz zespół" />
       </div>
       <MyProse>
-        <h2>Kameralny Chór Politechniki Wrocławskiej to:</h2>
+        <h2 className="text-left">Kameralny Chór Politechniki Wrocławskiej to:</h2>
         <h3>Pasja</h3>
         <p>Jesteśmy grupą amatorów pasjonatów, którzy spotykają się dwa razy w tygodniu dla czystej przyjemności śpiewania. Niektórzy z nas studiują, inni łączą obowiązki chóralne z zawodowymi i rodzicielskimi. Są wśród nas ludzie najróżniejszych profesji związanych w różny sposób z Politechniką Wrocławską.
         </p>
