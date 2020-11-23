@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-
-
 export default function PostOverview({
   title,
   image,
@@ -11,25 +9,17 @@ export default function PostOverview({
   slug,
 }) {
   return (
-    <div className="mb-8 md:mb-16 max-w-sm">
-      <div className="mb-5">
-        <Link as={`/post/${slug}`} href="/post/[slug]">
-            <a aria-label={title}>
-                <Image alt={title} src={image} width={300} height={150} className="shadow-md hover:shadow-2xl"/>
-            </a>
-        </Link>
-      </div>
-      <h3 className="text-3xl mb-2 leading-snug">
-        <Link as={`/post/${slug}`} href="/post/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <div className="text-lg">
-      <p className="">
-        {date}
-      </p>
-      <p className="font-bold">{author}</p>
-      </div>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg my-2 cursor-pointer">
+      <Link as={`/post/${slug}`} href="/post/[slug]">
+        <div>
+          <Image alt={title} src={image} width={400} height={200}/>
+          <div class="px-6 py-4">
+            <h3 className="font-bold text-xl mb-2 hover:underline">{title}</h3>
+            <p className="text-grey-darker text-base">{date}</p>
+            <p className="text-grey-darker text-base font-bold">{author}</p>
+          </div>
+        </div>
+      </Link>
     </div>
   )
 }
