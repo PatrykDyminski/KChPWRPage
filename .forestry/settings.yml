@@ -9,13 +9,13 @@ sections:
   label: Repertuar
   create: documents
   match: "*"
-  new_doc_ext: ".txt"
+  new_doc_ext: txt
 - type: directory
   path: data/people
   label: Ludzie
   create: documents
   match: "*"
-  new_doc_ext: ".txt"
+  new_doc_ext: txt
 - type: directory
   path: posts
   label: Posts
