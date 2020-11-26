@@ -10,7 +10,7 @@ const title = "Repertuar"
 export default function Repertuar({ categories }) {
   return (
     <MyPage pageTitle={title}>
-      <div className="flex flex-col text-center items-center my-8">
+      <div className="flex flex-col items-center my-8">
         <Image src="/nuty.jpg" width={594} height={335} alt="nuty" />
       </div>
       <MyProse>

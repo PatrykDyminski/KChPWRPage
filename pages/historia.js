@@ -8,7 +8,7 @@ const title = "Historia"
 export default function Historia() {
   return (
     <MyPage pageTitle={title}>
-      <div className="flex flex-col text-center items-center my-8">
+      <div className="flex flex-col items-center my-8">
         <Image src="/zdj2.jpg" width={768} height={512} alt="koncert barburkowy 2018" />
       </div>
       <MyProse>

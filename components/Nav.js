@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { useState } from "react";
 
 const localPages = [
-  { href: '/', label: 'Dom' },
   { href: '/sklad', label: 'Skład' },
   { href: '/repertuar', label: 'Repertuar' },
   { href: '/historia', label: 'Historia' },
   { href: '/rekrutacja', label: 'Rekrutacja' },
+  { href: '/kontakt', label: 'Kontakt' },
   { href: '/blog', label: 'Blog' },
 ]
 
@@ -32,7 +32,7 @@ export default function Nav() {
             {localPages.map(({ href, label }) => (
               <li key={`${href}${label}`}>
                 <Link href={href}>
-                  <a className="no-underline p-2 m-2 text-xl tracking-wider hover:text-gray-500">{label}</a>
+                  <a className="no-underline p-2 m-2 text-lg lg:text-xl tracking-wider hover:text-gray-500">{label}</a>
                 </Link>
               </li>
             ))}

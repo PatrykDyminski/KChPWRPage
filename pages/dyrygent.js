@@ -8,7 +8,7 @@ const title = "Dyrygent"
 export default function Dyrygent() {
   return (
     <MyPage pageTitle={title}>
-      <div className="flex flex-col text-center items-center my-8">
+      <div className="flex flex-col items-center my-8">
         <Image src="/aniaopt.jpg" width={1074} height={746} alt="Anna Sipak" />
       </div>
       <MyProse>
