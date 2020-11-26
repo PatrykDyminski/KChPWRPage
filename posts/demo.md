@@ -18,7 +18,7 @@ Humblebrag sartorial man braid ad vice, wolf ramps in cronut proident cold-press
 - Of people making lists
 - That don't really have a purpose
 
-Typewriter yuccie sed 90's. Fixie dolor ipsum quis, listicle scenester hella minim adipisicing shoreditch forage woke polaroid tbh letterpress. Ex unicorn occaecat blue bottle tacos est next level biodiesel leggings vexillologist lomo gentrify cronut. Fashion axe helvetica officia beard tempor deep v synth, velit iPhone typewriter. Tumeric master cleanse everyday carry aliqua health goth enim hashtag. Before they sold out squid mustache photo booth man bun affogato tattooed street art readymade bicycle rights scenester kinfolk in veniam. Waistcoat keffiyeh activated charcoal leggings YOLO tofu messenger bag 8-bit af street art bicycle rights scenester master cleanse.
+Typewriter yuccie sed 90's. Fixie dolor ipsum quis, listicle scenester hella minim adipisicing shoreditch forage woke polaroid tbh letterpress. Ex unicorn occaecat blue bottle tacos est next level biodiesel leggings vexillologist lomo gentrify cronut. Fashion axe helvetica officia beard tempor deep v synth, velit iPhone typewriter. Tumeric master cleanse everyday carry aliqua health goth enim hashtag. Before they sold out squid ![nuty](/img/nuty.jpg) mustache photo booth man bun affogato tattooed street art readymade bicycle rights scenester kinfolk in veniam. Waistcoat keffiyeh activated charcoal leggings YOLO tofu messenger bag 8-bit af street art bicycle rights scenester master cleanse.
 
 ![nuty](/img/nuty.jpg)
 

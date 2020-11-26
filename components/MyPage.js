@@ -12,11 +12,13 @@ export default function MyPage({ children, pageTitle }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/icon/K_logo_wob.png" />
       </Head>
-      <div className="px-4 py-8 max-w-3xl mx-auto sm:px-6 lg:max-w-4xl lg:px-8 xl:max-w-6xl min-h-screen">
+      <div className="bg-gradient-to-r from-white via-gray-200 to-white">
+      <div className="px-4 py-8 max-w-3xl mx-auto sm:px-6 lg:max-w-4xl lg:px-8 xl:max-w-6xl min-h-screen ">
         <Nav />
         <main>
           {children}
         </main>
+      </div>
       </div>
       <Footer />
     </>

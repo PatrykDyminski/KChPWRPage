@@ -9,7 +9,7 @@ export default function PostOverview({
   slug,
 }) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg my-2 cursor-pointer">
+    <div className="max-w-4xl rounded overflow-hidden shadow-lg my-2 cursor-pointer">
       <Link as={`/post/${slug}`} href="/post/[slug]">
         <div>
           <Image alt={title} src={image} width={400} height={200} />
