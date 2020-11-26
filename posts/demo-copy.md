@@ -1,7 +1,7 @@
 ---
 title: 'Pierwszy wpis na blogu'
 author: 'Patryk Dymiński'
-date: 10-28-2020
+date: 28-02-2020
 image: "/img/nuty.jpg"
 ---
 

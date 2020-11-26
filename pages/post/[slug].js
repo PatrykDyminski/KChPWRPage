@@ -22,7 +22,6 @@ export default function BlogPost({ data }) {
   )
 }
 
-
 export async function getStaticProps({ params }) {
 
   const post = getPostBySlug(params.slug, [
@@ -39,7 +38,6 @@ export async function getStaticProps({ params }) {
       data: post,
     },
   }
-
 }
 
 export async function getStaticPaths() {
@@ -53,6 +51,7 @@ export async function getStaticPaths() {
         },
       }
     }),
+    
     fallback: false,
   }
 }

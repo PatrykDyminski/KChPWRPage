@@ -52,6 +52,6 @@ export async function getStaticProps() {
   return {
     props: {
       peopleInVoices: ppl
-    },
+    }
   }
 }

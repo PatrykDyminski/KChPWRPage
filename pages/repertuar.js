@@ -37,7 +37,9 @@ export default function Repertuar({ categories }) {
 }
 
 export async function getStaticProps() {
+
   const repertoire = getRepertoire()
+  
   return {
     props: {
       categories: repertoire
