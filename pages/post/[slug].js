@@ -10,13 +10,13 @@ export default function BlogPost({ data }) {
   return (
     <>
       <MyPage pageTitle={data.title}>
-          <PostHeader 
-            image={data.image}
-            author={data.author}
-            title={data.title}
-            date={data.date}
-          />
-          <PostBody content={data.content} />   
+        <PostHeader
+          image={data.image}
+          author={data.author}
+          title={data.title}
+          date={data.date}
+        />
+        <PostBody content={data.content} />
       </MyPage>
     </>
   )
@@ -41,17 +41,18 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+
   const posts = getAllPosts(['slug'])
+  const paths = posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+    }
+  })
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
-    
-    fallback: false,
+    paths: paths,
+    fallback: false
   }
 }

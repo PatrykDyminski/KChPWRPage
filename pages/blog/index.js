@@ -2,7 +2,7 @@ import MyPage from '@components/MyPage'
 import MorePosts from '@components/MorePosts'
 import PostsGrid from '@components/PostsGrid'
 
-import { getAllPosts } from '../lib/api'
+import { getAllPosts } from '../../lib/api'
 
 const title = "Blog"
 
