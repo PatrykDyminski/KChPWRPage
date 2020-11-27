@@ -10,6 +10,7 @@ export default function MyPage({ children, pageTitle }) {
         <title>KCHPWR | {pageTitle}</title>
         <meta property="og:title" content="Strona Kameralnego Chóru Politechniki Wrocławskiej" key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
         <link rel="shortcut icon" href="/icon/K_logo_wob.png" />
       </Head>
       <div className="bg-gradient-to-r from-white via-gray-200 to-white">
