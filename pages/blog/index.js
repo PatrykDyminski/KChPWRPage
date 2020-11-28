@@ -4,7 +4,7 @@ import PostsGrid from '@components/PostsGrid'
 
 import Link from 'next/link'
 
-import { getAllPosts } from '../../lib/api'
+import { getAllPosts, sortPostsByDate } from '../../lib/api'
 
 const title = "Blog"
 
@@ -30,13 +30,15 @@ export default function Blog({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
+  let allPosts = getAllPosts([
     'title',
     'date',
     'slug',
     'author',
     'image'
   ])
+
+  allPosts = sortPostsByDate(allPosts)
 
   return {
     props: { allPosts },

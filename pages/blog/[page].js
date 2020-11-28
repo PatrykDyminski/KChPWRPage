@@ -3,7 +3,7 @@ import PostsGrid from '@components/PostsGrid'
 
 import Link from 'next/link'
 
-import { getAllPosts } from '../../lib/api'
+import { getAllPosts, sortPostsByDate } from '../../lib/api'
 
 const title = "Blog"
 
@@ -32,7 +32,7 @@ const numberOfPosts = 8
 export async function getStaticProps({ params }) {
 
   const pageNum = parseInt(params.page)
-  const posts = getAllPosts([
+  let posts = getAllPosts([
     'title',
     'date',
     'slug',
@@ -40,6 +40,8 @@ export async function getStaticProps({ params }) {
     'image',
     'content'
   ])
+
+  posts = sortPostsByDate(posts)
 
   const start = (pageNum - 1) * numberOfPosts
   let end = start + numberOfPosts
