@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-accent-2 bg-gray-500">
+    <footer className="border-t border-accent-2 bg-gray-300">
       <div className="container mx-auto px-5">
-        <div className="py-28 flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <div className="text-md lg:text-lg font-bold tracking-tighter leading-tight text-center lg:text-left lg:my-5 lg:w-1/2">
             <Link href="https://www.facebook.com/KameralnyChorPWr" passHref={true}>
               <h3 className="cursor-pointer hover:text-blue-600 my-2 lg:my-0">facebook.com/KameralnyChorPWr</h3>
