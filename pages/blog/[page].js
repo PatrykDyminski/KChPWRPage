@@ -1,11 +1,17 @@
 import MyPage from '@components/MyPage'
 import PostsGrid from '@components/PostsGrid'
 
+import Link from 'next/link'
+
 import { getAllPosts } from '../../lib/api'
 
 const title = "Blog"
 
-export default function BlogPage({ posts, page }) {
+export default function BlogPage({ posts, page, more }) {
+
+  const pageNum = parseInt(page)
+  const link = "/blog/" + (pageNum+1).toString()
+
   return (
     <MyPage pageTitle={title}>
       <div className="my-8">
@@ -14,6 +20,9 @@ export default function BlogPage({ posts, page }) {
         </h2>
         <PostsGrid posts={posts} />
       </div>
+      {more && <div className="flex flex-col text-center md:items-center my-8">
+        <Link href={link}><a className="p-2 border-2 border-black tracking-wider hover:text-gray-500">Więcej Wpisów</a></Link>
+      </div>}
     </MyPage>
   )
 }
@@ -39,13 +48,13 @@ export async function getStaticProps({ params }) {
     end = posts.length
   }
 
-  posts.slice(start, end)
+  const isMore = posts.length >= pageNum * numberOfPosts
 
   return {
     props: {
       posts: posts.slice(start, end),
       page: params.page,
-      last: false
+      more: isMore
     }
   }
 }

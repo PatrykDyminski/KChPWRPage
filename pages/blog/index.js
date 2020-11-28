@@ -2,6 +2,8 @@ import MyPage from '@components/MyPage'
 import MorePosts from '@components/MorePosts'
 import PostsGrid from '@components/PostsGrid'
 
+import Link from 'next/link'
+
 import { getAllPosts } from '../../lib/api'
 
 const title = "Blog"
@@ -9,7 +11,7 @@ const title = "Blog"
 export default function Blog({ allPosts }) {
   const heroPost = allPosts[0]
   const heroPost2 = allPosts[1]
-  const morePosts = allPosts.slice(2)
+  const morePosts = allPosts.slice(2,8)
 
   return (
     <MyPage pageTitle={title}>
@@ -20,6 +22,9 @@ export default function Blog({ allPosts }) {
         <PostsGrid posts={[heroPost, heroPost2]} />
       </div>
       {morePosts.length > 0 && <MorePosts posts={morePosts} />}
+      {allPosts.length > 8 && <div className="flex flex-col text-center md:items-center my-8">
+        <Link href="/blog/2"><a className="p-2 border-2 border-black tracking-wider hover:text-gray-500">Więcej Wpisów</a></Link>
+      </div>}
     </MyPage>
   )
 }
