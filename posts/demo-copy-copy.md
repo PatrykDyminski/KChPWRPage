@@ -1,7 +1,7 @@
 ---
 title: Ten Post ma tekst
 author: Patryk Dymiński
-date: 2020-10-29T22:48:00Z
+date: 29-11-2020
 image: "/img/nuty.jpg"
 
 ---
