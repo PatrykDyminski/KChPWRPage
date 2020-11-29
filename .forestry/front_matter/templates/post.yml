@@ -18,9 +18,3 @@ fields:
 - type: file
   name: image
   label: image
-pages:
-- posts/data.md
-- posts/polskie-znaddskkciiilu.md
-- posts/post-dodany-przez-forestry.io.md
-- posts/sdfsdf.md
-- posts/test-zdj.md
