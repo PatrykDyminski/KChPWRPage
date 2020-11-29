@@ -18,3 +18,5 @@ fields:
 - type: file
   name: image
   label: image
+pages:
+- posts/przeglad-sztuki-survival-2019.md
