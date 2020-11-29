@@ -8,8 +8,8 @@ export default function PostHeader({ image, author, title, date }) {
         <Image
           src={image}
           alt={title}
-          width={750}
-          height={400}
+          width={840}
+          height={472}
         />
       )}
 

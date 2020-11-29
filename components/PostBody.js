@@ -7,7 +7,7 @@ import MyProse from './MyProse'
 const renderers = {
   image: image => {
     return  <div className="flex flex-col items-center">
-              <Image src={image.src} alt={image.alt} height="300" width="600" />
+              <Image src={image.src} alt={image.alt} height="337" width="600" />
             </div>
   },
   
@@ -16,7 +16,7 @@ const renderers = {
     if (node.children[0].type === "image") {
       const image = node.children[0]
       return  <div className="flex flex-col items-center">
-                <Image src={image.url} alt={image.alt} height="300" width="600" />
+                <Image src={image.url} alt={image.alt} height="337" width="600" />
               </div>
     }
 
