@@ -28,7 +28,7 @@ export default function Sklad({ peopleInVoices }) {
         <ul>
           {peopleInVoices.map((voice) => (
             <li key={voice.voiceName} className="px-4 py-2 m-2">
-              <h2 className="text-3xl text-center font-medium border-t-4 border-b-4 border-black mt-4 md:mt-10 py-2">{voice.voiceName}</h2>
+              <h2 className="text-3xl text-center font-medium border-t-4 border-b-4 border-pwr mt-4 md:mt-10 py-2">{voice.voiceName}</h2>
 
               <ul className="grid grid-cols-2 md:grid-cols-4">
                 {voice.people.map((person) =>

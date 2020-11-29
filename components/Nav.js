@@ -28,22 +28,22 @@ export default function Nav() {
       </div>
       <nav>
         <div className="hidden md:block">
-          <ul className="flex justify-evenly items-center pt-4 pb-4 border-4 border-black">
+          <ul className="flex justify-evenly items-center pt-4 pb-4 border-4 border-pwr">
             {localPages.map(({ href, label }) => (
               <li key={`${href}${label}`}>
                 <Link href={href}>
-                  <a className="no-underline p-2 m-2 text-lg lg:text-xl tracking-wider hover:text-gray-500">{label}</a>
+                  <a className="no-underline p-2 m-2 text-lg lg:text-xl tracking-wider hover:text-pwr">{label}</a>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
         <div className="md:hidden">
-          <ul className="pt-4 pb-4 text-center text-2xl border-4 border-black rounded-lg" style={{ display: showMe ? "block" : "none" }}>
+          <ul className="pt-4 pb-4 text-center text-2xl border-4 border-pwr rounded-lg" style={{ display: showMe ? "block" : "none" }}>
             {localPages.map(({ href, label }) => (
               <li key={`${href}${label}`} className="m-2">
                 <Link href={href}>
-                  <a className="no-underline p-2 tracking-wider hover:text-gray-500">{label}</a>
+                  <a className="no-underline p-2 tracking-wider hover:text-pwr">{label}</a>
                 </Link>
               </li>
             ))}

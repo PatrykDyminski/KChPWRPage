@@ -32,7 +32,7 @@ export default function IndexPage({ posts }) {
       </MyProse>
 
       <div className="flex flex-col text-center items-center my-8">
-        <h2 className="text-3xl mb-2 leading-snug text-center p-2 font-bold border-4 border-black md:w-10/12">Najnowsze wpisy na naszym blogu</h2>
+        <h2 className="text-3xl mb-2 leading-snug text-center p-2 font-bold border-4 border-pwr md:w-10/12">Najnowsze wpisy na naszym blogu</h2>
       </div>
 
       <PostsGrid posts={posts} />

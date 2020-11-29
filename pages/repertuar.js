@@ -21,7 +21,7 @@ export default function Repertuar({ categories }) {
 
         {categories.map((category) => (
           <div className="">
-            <h2 className="text-3xl text-center font-medium border-t-4 border-b-4 border-black mt-5 mb-5 py-2">{category.categoryName}</h2>
+            <h2 className="text-3xl text-center font-medium border-t-4 border-b-4 border-pwr mt-5 mb-5 py-2">{category.categoryName}</h2>
 
             <ol className="">
               {category.tracks.map((track) => (
