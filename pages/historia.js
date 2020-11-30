@@ -13,7 +13,7 @@ export default function Historia() {
       </div>
       <MyProse>
         <h2>Historia Chóru</h2>
-        <p>Kameralny Chór Politechniki Wrocławskiej powstał z miłości do śpiewu. Nasza historia sięga 2015 roku, gdy byli chórzyści, oraz nasz aktualna Dyrygentka Politechnicznego zespołu Consonanza, podjęli decyzję o założeniu nowego zespołu. Początkowo chór liczył 14 osób i co ciekawe – w naszych szeregach znajdowała się tylko jedna studentka i dwóch pracowników Politechniki Wrocławskiej. Dziś sytuacja wygląda zupełnie inaczej! Jest nas 39 osób, 23 to studenci, 5 absolwentów oraz 1 pracownik Politechniki. Oczywiście pozostali chórzyści to wielcy sympatycy naszej uczelni!
+        <p>Kameralny Chór Politechniki Wrocławskiej powstał z miłości do śpiewu. Nasza historia sięga 2015 roku, gdy byli chórzyści Politechnicznego zespołu Consonanza podjęli decyzję o założeniu nowego zespołu. Początkowo chór liczył 14 osób i co ciekawe – w naszych szeregach znajdowała się tylko jedna studentka i dwóch pracowników Politechniki Wrocławskiej. Dziś sytuacja wygląda zupełnie inaczej! Jest nas 39 osób, 23 to studenci, 5 absolwentów oraz 1 pracownik Politechniki. Oczywiście pozostali chórzyści to wielcy sympatycy naszej uczelni!
 	      </p>
         <p>Nasz skład rozrastał się stopniowo. Poraz pierwszy publicznie wystąpiliśmy podczas wydarzenia Opery Wrocławskiej ,,Zarzuela Show” 7 grudnia 2015. Było to swoiste preludium do wielkiego przedsięwzięcia w ramach programu ,,Wrocław Europejską Stolica Kultury 2016”. 18 czerwca 2016 wzięliśmy udział w wyjątkowym spektaklu ,,Carmen – Zarzuela Show” na Wrocławskim Stadionie Miejskim. Kilkuset wykonawców na estradzie, kilkadziesiąt tysięcy widzów, próby do 3 nad ranem... to było wspaniałe przeżycie!
         </p>

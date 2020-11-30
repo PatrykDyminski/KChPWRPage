@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function PostHeader({ image, author, title, date }) {
   return (
     <div className="flex flex-col text-center items-center">
-      <h1 className="text-2xl sm:text-3xl xl:text-5xl md:leading-smug tracking-wide font-extrabold uppercase my-8 md:my-16">{title}</h1>
+      <h1 className="text-2xl sm:text-3xl xl:text-4xl md:leading-smug uppercase my-8 md:my-16">{title}</h1>
       {image && (
         <Image
           src={image}
