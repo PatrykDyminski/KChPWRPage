@@ -18,12 +18,12 @@ export default function Nav() {
 
   return (
     <div className="font-roboto">
-      <header className="flex text-lg sm:text-2xl md:text-4xl justify-center text-center my-3 md:my-5">
+      <header className="flex text-lg sm:text-2xl md:text-4xl justify-center text-center py-2 md:py-5">
         <Link href='/'>
           <a>Kameralny Chór Politechniki Wrocławskiej</a>
         </Link>
       </header>
-      <div className="p-3 flex justify-evenly items-center shadow-xl cursor-pointer md:hidden" onClick={toggle}>
+      <div className="p-3 flex justify-evenly items-center border-4 border-pwr rounded-lg cursor-pointer md:hidden" onClick={toggle}>
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </div>
       <nav>
@@ -39,7 +39,7 @@ export default function Nav() {
           </ul>
         </div>
         <div className="md:hidden">
-          <ul className="pt-4 pb-4 text-center text-2xl border-4 border-pwr rounded-lg" style={{ display: showMe ? "block" : "none" }}>
+          <ul className="pt-4 pb-4 text-center text-2xl border-b-4 border-l-4 border-r-4 border-pwr rounded-lg" style={{ display: showMe ? "block" : "none" }}>
             {localPages.map(({ href, label }) => (
               <li key={`${href}${label}`} className="m-2">
                 <Link href={href}>
