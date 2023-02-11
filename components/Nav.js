@@ -10,6 +10,14 @@ const localPages = [
   { href: '/blog', label: 'Blog' },
 ]
 
+import { Roboto_Mono } from '@next/font/google';
+
+const roboto_mono = Roboto_Mono({
+  variable: '--font-roboto-mono',
+  subsets: ['latin'],
+  display: 'swap'
+});
+
 export default function Nav() {
   const [showMe, setShowMe] = useState(false);
   function toggle() {
@@ -17,7 +25,7 @@ export default function Nav() {
   }
 
   return (
-    <div className="font-roboto">
+    <div className={`${roboto_mono.variable} font-mono`}>
       <header className="flex text-lg sm:text-2xl md:text-4xl justify-center text-center py-2 md:py-5">
         <Link href='/'>
           Kameralny Chór Politechniki Wrocławskiej

@@ -1,5 +1,7 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  purge: [
+  content: [
     './components/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -8,11 +10,10 @@ module.exports = {
         'pwr': '#ab1200'
       },
       fontFamily: {
-        roboto: ['Roboto Mono']
+        mono: ['var(--font-roboto-mono)', ...fontFamily.mono],
       }
     },
   },
-  variants: {},
   plugins: [
     require('@tailwindcss/typography'),
   ]

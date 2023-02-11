@@ -8,7 +8,7 @@ export default function IdCard({ name, imgSource }) {
         width={500}
         height={500}
         alt="Członek naszego zespołu"
-        className="rounded-full transform scale-75"
+        className="rounded-full scale-75"
       />
       <div className="text-lg text-center">{name}</div>
     </li>

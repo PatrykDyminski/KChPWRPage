@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@next/codemod": "^13.1.6",
-    "@tailwindcss/typography": "^0.3.1",
+    "@next/font": "^13.1.6",
     "eslint-config-next": "^13.1.6",
     "gray-matter": "^4.0.2",
     "next": "^13.1.6",
@@ -18,9 +18,10 @@
     "react-markdown": "^5.0.3"
   },
   "devDependencies": {
-    "autoprefixer": "10.0.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^3.2.6"
   },
   "license": "MIT"
 }
