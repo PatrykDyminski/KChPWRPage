@@ -1,7 +1,7 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 const title = "Asystent"
 

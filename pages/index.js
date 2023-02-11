@@ -2,7 +2,7 @@ import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 import PostsGrid from '@components/PostsGrid'
 
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import Link from 'next/link'
 
 import { getLatestPosts } from '../lib/api'

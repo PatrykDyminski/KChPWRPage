@@ -3,7 +3,7 @@ import MyProse from '@components/MyProse'
 
 import { getRepertoire } from 'lib/api'
 
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 const title = "Repertuar"
 
