@@ -10,14 +10,6 @@ const localPages = [
   { href: '/blog', label: 'Blog' },
 ]
 
-import { Roboto_Mono } from '@next/font/google';
-
-const roboto_mono = Roboto_Mono({
-  variable: '--font-roboto-mono',
-  subsets: ['latin'],
-  display: 'swap'
-});
-
 export default function Nav() {
   const [showMe, setShowMe] = useState(false);
   function toggle() {
@@ -25,14 +17,18 @@ export default function Nav() {
   }
 
   return (
-    <div className={`${roboto_mono.variable} font-mono`}>
+    <div className="font-mono">
       <header className="flex text-lg sm:text-2xl md:text-4xl justify-center text-center py-2 md:py-5">
         <Link href='/'>
           Kameralny Chór Politechniki Wrocławskiej
         </Link>
       </header>
-      <div className="p-3 flex justify-evenly items-center border-4 border-pwr rounded-lg cursor-pointer md:hidden" onClick={toggle}>
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      <div 
+        className="p-3 flex justify-evenly items-center border-4 border-pwr rounded-lg cursor-pointer md:hidden" 
+        onClick={toggle}>
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
       </div>
       <nav>
         <div className="hidden md:block">
