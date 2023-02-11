@@ -4,10 +4,13 @@ import Footer from '@components/Footer'
 import Head from 'next/head'
 
 export default function MyPage({ children, pageTitle }) {
+
+  const title = `KCHPWR | ${pageTitle}`
+
   return (
     <>
       <Head>
-        <title>KCHPWR | {pageTitle}</title>
+        <title>{title}</title>
         <meta property="og:title" content="Strona Kameralnego Chóru Politechniki Wrocławskiej" key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
