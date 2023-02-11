@@ -2,7 +2,7 @@ import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 import PostsGrid from '@components/PostsGrid'
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link'
 
 import { getLatestPosts } from '../lib/api'
@@ -13,7 +13,12 @@ export default function IndexPage({ posts }) {
   return (
     <MyPage pageTitle={title}>
       <div className="flex flex-col text-center items-center my-8">
-        <Image src="/zdj1.jpg" width={1152} height={583} alt="nasz zespół" />
+        <Image
+          src="/zdj1.jpg"
+          width={1152}
+          height={583}
+          alt="nasz zespół"
+        />
       </div>
       <MyProse>
         <h2 className="text-left">Kameralny Chór Politechniki Wrocławskiej to:</h2>

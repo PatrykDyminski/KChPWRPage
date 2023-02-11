@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function PostHeader({ image, author, title, date }) {
   return (
@@ -10,7 +10,7 @@ export default function PostHeader({ image, author, title, date }) {
           alt={title}
           width={840}
           height={472}
-        />
+         />
       )}
 
       <div className="md:text-xl md:leading-smug tracking-wide uppercase mt-2 p-4">
@@ -18,5 +18,5 @@ export default function PostHeader({ image, author, title, date }) {
         <h3>{author}</h3>
       </div>
     </div>
-  )
+  );
 }

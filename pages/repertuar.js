@@ -3,7 +3,7 @@ import MyProse from '@components/MyProse'
 
 import { getRepertoire } from 'lib/api'
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const title = "Repertuar"
 
@@ -11,7 +11,12 @@ export default function Repertuar({ categories }) {
   return (
     <MyPage pageTitle={title}>
       <div className="flex flex-col items-center my-8">
-        <Image src="/nuty.jpg" width={594} height={335} alt="nuty" />
+        <Image
+          src="/nuty.jpg"
+          width={594}
+          height={335}
+          alt="nuty"
+        />
       </div>
       <MyProse>
         <h3>Nasz Repertuar</h3>
@@ -33,13 +38,13 @@ export default function Repertuar({ categories }) {
         ))}
       </MyProse>
     </MyPage>
-  )
+  );
 }
 
 export async function getStaticProps() {
 
   const repertoire = getRepertoire()
-  
+
   return {
     props: {
       categories: repertoire

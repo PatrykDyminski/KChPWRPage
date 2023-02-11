@@ -1,7 +1,7 @@
 import MyPage from '@components/MyPage'
 import MyProse from '@components/MyProse'
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link'
 
 const title = "Kontakt"
@@ -14,15 +14,20 @@ export default function Kontakt() {
         <p>Studenckie Centrum Kultury Muzycznej, ul. Powstańców Śląskich 137a</p>
       </MyProse>
       <div className="flex flex-col items-center my-8">
-        <Image src="/siedziba.jpg" width={600} height={407} alt="Nasz siedziba" />
+        <Image
+          src="/siedziba.jpg"
+          width={600}
+          height={407}
+          alt="Nasz siedziba"
+        />
       </div>
       <MyProse>
         <h3>Próby</h3>
         <p>Próby chóru odbywają się w:
-        <ul>
-          <li>poniedziałki: 18:45 – 21:30</li>
-          <li>środy: 18:00 – 20:00</li>
-        </ul>
+          <ul>
+            <li>poniedziałki: 18:45 – 21:30</li>
+            <li>środy: 18:00 – 20:00</li>
+          </ul>
         </p>
         <h3>Poczta tradycyjna</h3>
         <ul>
