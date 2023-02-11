@@ -8,16 +8,18 @@
     "export": "next export"
   },
   "dependencies": {
+    "@next/codemod": "^13.1.6",
     "@tailwindcss/typography": "^0.3.1",
+    "eslint-config-next": "^13.1.6",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-markdown": "^5.0.3"
   },
   "devDependencies": {
     "autoprefixer": "10.0.4",
-    "postcss": "8.1.10",
+    "postcss": "^8.4.21",
     "tailwindcss": "^2.0.1"
   },
   "license": "MIT"
