@@ -20,7 +20,7 @@ export default function Nav() {
     <div className="font-roboto">
       <header className="flex text-lg sm:text-2xl md:text-4xl justify-center text-center py-2 md:py-5">
         <Link href='/'>
-          <a>Kameralny Chór Politechniki Wrocławskiej</a>
+          Kameralny Chór Politechniki Wrocławskiej
         </Link>
       </header>
       <div className="p-3 flex justify-evenly items-center border-4 border-pwr rounded-lg cursor-pointer md:hidden" onClick={toggle}>
@@ -31,8 +31,10 @@ export default function Nav() {
           <ul className="flex justify-evenly items-center pt-4 pb-4 border-4 border-pwr">
             {localPages.map(({ href, label }) => (
               <li key={`${href}${label}`}>
-                <Link href={href}>
-                  <a className="no-underline p-2 m-2 text-lg lg:text-xl tracking-wider hover:text-pwr">{label}</a>
+                <Link
+                  href={href}
+                  className="no-underline p-2 m-2 text-lg lg:text-xl tracking-wider hover:text-pwr">
+                  {label}
                 </Link>
               </li>
             ))}
@@ -42,8 +44,8 @@ export default function Nav() {
           <ul className="pt-4 pb-4 text-center text-2xl border-b-4 border-l-4 border-r-4 border-pwr rounded-lg" style={{ display: showMe ? "block" : "none" }}>
             {localPages.map(({ href, label }) => (
               <li key={`${href}${label}`} className="m-2">
-                <Link href={href}>
-                  <a className="no-underline p-2 tracking-wider hover:text-pwr">{label}</a>
+                <Link href={href} className="no-underline p-2 tracking-wider hover:text-pwr">
+                  {label}
                 </Link>
               </li>
             ))}
@@ -51,5 +53,5 @@ export default function Nav() {
         </div>
       </nav>
     </div>
-  )
+  );
 }

@@ -11,9 +11,11 @@ export default function HeroIdCard({ name, link, imgSource, text }) {
         <h2 className="text-md lg:text-lg font-bold leading-relaxed">{name}</h2>
         <p className="my-2 mb-5">{text}</p>
         <div className="flex flex-col text-center md:items-end my-8">
-          <Link href={link}><a className="p-2 border-2 border-pwr tracking-wider hover:text-gray-500">Więcej informacji</a></Link>
+          <Link
+            href={link}
+            className="p-2 border-2 border-pwr tracking-wider hover:text-gray-500">Więcej informacji</Link>
         </div>
       </div>
     </div>
-  )
+  );
 }

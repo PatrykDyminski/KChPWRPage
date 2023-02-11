@@ -10,7 +10,7 @@ export default function PostOverview({
 }) {
   return (
     <div key={slug} className="max-w-lg rounded overflow-hidden shadow-lg my-2 cursor-pointer">
-      <Link as={`/post/${slug}`} href={`/post/${slug}`}>
+      <Link as={`/post/${slug}`} href={`/post/${slug}`} legacyBehavior>
         <div>
           <Image alt={title} src={image} width={600} height={337} />
           <div className="px-6 py-4">
@@ -21,5 +21,5 @@ export default function PostOverview({
         </div>
       </Link>
     </div>
-  )
+  );
 }
