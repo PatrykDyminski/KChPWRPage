@@ -26,7 +26,7 @@ export default function IndexPage({ posts }) {
         <h3>Wyzwania</h3>
         <p>Śpiew chóralny jest dla nas odskocznią od codzienności, relaksem, źródłem radości i wzruszenia. I sięganiem „do gwiazd”. Wspólna praca daje nam możliwość nauczenia się nowych umiejętności: pracy w zespole, słuchania innych, prowadzenia projektów, jak również śpiewania.
         </p>
-        <h4>Jeśli chcesz do nas dołączyć odwiedź stronę <Link href="/rekrutacja"><a> REKRUTACJI</a></Link></h4>
+        <h4>Jeśli chcesz do nas dołączyć odwiedź stronę <Link href="/rekrutacja"> REKRUTACJI</Link></h4>
         <h4>Dowiedz się więcej o <Link href="/historia"> HISTORII</Link></h4>
         <h4>Poznaj ludzi tworzących nasz <Link href="/sklad"> ZESPÓŁ</Link></h4>
       </MyProse>
@@ -38,7 +38,7 @@ export default function IndexPage({ posts }) {
       <PostsGrid posts={posts} />
 
     </MyPage>
-  )
+  );
 }
 
 export async function getStaticProps() {

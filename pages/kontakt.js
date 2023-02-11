@@ -35,10 +35,13 @@ export default function Kontakt() {
         <h3>Poczta elektroniczna</h3>
         <p>kameralny@pwr.edu.pl</p>
         <h3>facebook</h3>
-        <Link href="https://www.facebook.com/KameralnyChorPWr" passHref={true}>
+        <Link
+          href="https://www.facebook.com/KameralnyChorPWr"
+          passHref={true}
+          legacyBehavior>
           <p className="cursor-pointer hover:text-blue-600">facebook.com/KameralnyChorPWr</p>
         </Link>
       </MyProse>
     </MyPage>
-  )
+  );
 }

@@ -23,10 +23,12 @@ export default function Blog({ allPosts }) {
       </div>
       {morePosts.length > 0 && <MorePosts posts={morePosts} />}
       {allPosts.length > 8 && <div className="flex flex-col text-center md:items-center my-8">
-        <Link href="/blog/2"><a className="p-2 border-2 border-black tracking-wider hover:text-gray-500">Więcej Wpisów</a></Link>
+        <Link
+          href="/blog/2"
+          className="p-2 border-2 border-black tracking-wider hover:text-gray-500">Więcej Wpisów</Link>
       </div>}
     </MyPage>
-  )
+  );
 }
 
 export async function getStaticProps() {

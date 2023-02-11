@@ -21,10 +21,12 @@ export default function BlogPage({ posts, page, more }) {
         <PostsGrid posts={posts} />
       </div>
       {more && <div className="flex flex-col text-center md:items-center my-8">
-        <Link href={link}><a className="p-2 border-2 border-black tracking-wider hover:text-gray-500">Więcej Wpisów</a></Link>
+        <Link
+          href={link}
+          className="p-2 border-2 border-black tracking-wider hover:text-gray-500">Więcej Wpisów</Link>
       </div>}
     </MyPage>
-  )
+  );
 }
 
 const numberOfPosts = 8
